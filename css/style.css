@@ -5,7 +5,7 @@
 
 .center {
     text-align: center;
-    ;
+    /* margin-bottom: 20px; */
 }
 
 .logo-text {
@@ -20,7 +20,7 @@
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0;
 }
 
@@ -28,13 +28,14 @@
     background-color: black;
     float: left;
     width: 30%;
+    min-width: 275px;
     color: white;
     margin-top: 40px ;
-    margin-bottom: 40px;
-
+    margin-bottom: 10px;
 }
 
-.box:nth-of-type(3) {
+/* problema di numerazione da chiedere*/
+.box:nth-of-type(3n+3) {
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -45,17 +46,33 @@
     content: "";
 }
 
+.info{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 4%;
+}
+
+.info div {
+    margin: 4% 0;
+}
+
 img {
     width: 30%;
     height: auto;
+    vertical-align: middle;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info div:nth-of-type(2) {
+    text-transform: capitalize;
 }
 
 a {
     color: rgb(0, 187, 255);
     text-decoration: none;
- 
-}
-
-.box div {
-    
 }
